@@ -24,5 +24,11 @@ func main() {
 
 		return n.Reply(msg, requestBody)
 
+		
+
 	})
+
+	if err := n.Run(); err != nil {
+		log.Fatal(err)
+	}
 }
